@@ -27,6 +27,6 @@ li {
 
 <button class="my-button">Click me</button>
 
-my-button {
+.my-button {
   background-color: blue;
 }

@@ -10,7 +10,7 @@ const getTasks = async () => {
   return res.rows;
 };
 
-//Write a comment describing what this function insersts a new task into the database
+//asynchronous function that inserts a new task into a tasks table in a database and returns the newly inserted task.
 const addTask = async (title, description) => {
   const res = await db.query(
     "INSERT INTO tasks (title, description, is_complete, created_at) VALUES ($1, $2, false, NOW()) RETURNING *",

@@ -1,13 +1,11 @@
 const db = require("../db");
 
-//Add a comment describing what this function does and what does it return
+//This function is asynchronus and it retrieves tasks from a database, and it will return a promise
 const getTasks = async () => {
   const res = await db.query(
     //correct this SQL query to select all tasks from the database
-    SELECT * FROM getTask 
-    ORDER BY created_at DESC;
+    'SELECT * FROM getTask ORDER BY created_at DESC';
   
-    "SELECT everything FROM tasks ORDER BY created_at DESC"
   );
   return res.rows;
 };

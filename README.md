@@ -1,1 +1,1 @@
-My project is a todo-list, specifically for students.
+My project is a full-stack application, made to monitor a students to-do list
